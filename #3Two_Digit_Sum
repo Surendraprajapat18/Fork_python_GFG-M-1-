@@ -1,0 +1,8 @@
+def digitsSum(N):
+    ##Your code here
+    Sum = 0
+    for i in str(N):
+        Sum += int(i)
+    return Sum
+    
+    
