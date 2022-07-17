@@ -1,0 +1,14 @@
+from math import log
+def nearestPower(A, B):
+    if(A==B):
+        return 1
+       
+    thres = log(B)//log(A)
+    res1 = abs(B - (A**thres))
+    res2 = abs(B - (A**(thres+1)))
+    if(res1 == res2):
+        return int(A**(thres+1))
+    elif(res1>res2):
+        return int(A**(thres+1))
+    else:
+        return int(A**thres)
