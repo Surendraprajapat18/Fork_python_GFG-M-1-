@@ -1,0 +1,4 @@
+def mean(D,M):
+    ##Your code here
+    mean = (M*3)+D
+    return mean//4
